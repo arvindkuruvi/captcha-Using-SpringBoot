@@ -1,0 +1,12 @@
+version: '3'
+services:
+    captchagenerator:
+      container_name: captchagenerator
+      build: .
+      restart: unless-stopped
+      stdin_open: true
+      tty: true
+      ports: 
+          - 8000:8000
+         
+    
